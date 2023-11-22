@@ -1,0 +1,56 @@
+ .CardContainer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .Card {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .Card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+
+        .parentContainer{
+
+            margin-top: 100px;
+
+        }
+
+
+        .Card img {
+                  width: 40%; /* Breite des Bildes weiter reduzieren */
+                  height: auto; /* Behalte das Seitenverhältnis bei */
+                  margin: 0 auto; /* Zentriere das Bild horizontal im Container */
+                  margin-top: 30px;
+                  display: block; /* Entferne den zusätzlichen unteren Raum, wenn als Inline-Element behandelt */
+              }
+
+
+        body {
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          height: 100vh; /* 100% der Bildschirmhöhe */
+                          margin: auto; /* Ränder des Körpers aufheben */
+        }
+
+
+
+
+
+
+
