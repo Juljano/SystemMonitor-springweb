@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PC-Statistic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="parentContainer">
+    <div class="CardContainer">
+    <!-- CardView 1 -->
+    <div class="Card">
+        <img src="microchip.svg" alt="Cover">
+        <div class="container">
+            <h4>Prozessor:</h4>
+
+        </div>
+    </div>
+
+    <!-- CardView 2 -->
+    <div class="Card">
+        <img src="harddrive.svg" alt="Cover">
+        <div class="container">
+            <h4>Festplatten-information:</h4>
+            <p>Name: /dev/sda</p>
+            <p>Gesamt:</p>
+            <p>Benutzt:</p>
+            <p>Frei:</p>
+            <meter value="11.08" min="0" max="100" high="90" low="10" optimum="60"></meter>
+        </div>
+    </div>
+
+    <div class="Card">
+        <img src="hostname.svg" alt="Cover">
+        <div class="container">
+            <h4>Betriebsystem und Hostname:</h4>
+            <p th:text="${values.pcName}"></p>
+
+
+            <p>GNU/Linux Ubuntu 22.04.3 LTS</p>
+        </div>
+
+    </div><div class="Card">
+    <img src="time.svg" alt="Cover">
+    <div class="container">
+        <h4>Betriebsdauer:</h4>
+        <p th:text="${values}">Stunden</p>
+    </div>
+
+
+</div><div class="Card">
+    <img src="server.svg" alt="Cover">
+    <div class="container">
+        <h4>Router und DNS:</h4>
+        <p>[192.168.178.1, 127.0.0.53]</p>
+    </div>
+
+</div>
+
+    <div class="Card">
+    <img src="speed.svg" alt="Cover">
+    <div class="container">
+        <h4>Down- & Upload:</h4>
+        <p>Download: 1048.576 MBps </p>
+        <p>Upload: 131.072 MBps</p>
+    </div>
+</div>
+        <div class="Card">
+            <img src="network.svg" alt="Cover">
+            <div class="container">
+                <h4>Netzwerkstelle:</h4>
+                <p>enp37s0</p>
+            </div>
+        </div>
+
+    <div class="Card">
+    <img src="server.svg" alt="Cover">
+    <div class="container">
+        <h4>IPV4</h4>
+        <p>192.168.178.31</p>
+    </div>
+</div>
+
+    </div>
+</div>
+</body>
+</html>
